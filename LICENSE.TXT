@@ -31,7 +31,8 @@ or implied, of the copyright holders and contributors.
 -------------------------------------
 UQMatchbot uses the following libraries:
 -XStream http://xstream.codehaus.org
--IRClib http://moepii.sourceforge.net/
+-IRClib http://moepii.sourceforge.net
+-ini4j http://ini4j.sourceforge.net
 
 XStream is licensed under a BSD-style license (see licenses/xstream/license.txt)
 
@@ -39,3 +40,5 @@ IRClib is triple-licensed under the following licenses:
 	* GNU Lesser General Public License (see licenses/irclib/COPYING_LGPL),
 	* Apache License, Version 2.0 (see licenses/irclib/COPYING_AL) and
 	* Eclipse Public License (see licenses/irclib/COPYING_EPL).
+	
+ini4j is licensed under the Apache License, version 2.0 (see licenses/ini4j/license.txt)

@@ -4,47 +4,20 @@ NOTES:
 	If you do a WHOIS on an IRC server for a user, you'll get the following response:
 	[Nickname] (Username@Hostname): Realname
 
-*The configuration of a bot is currently handled through XStream. Use (and/or modify!) the following XML and save it as 'uqmatchbot_conf.xml' for epicness:
-*(Note that there are several 'defaults' that are used if these aren't specified. See the code for details.)
-*(Not all of these need to be specified; some are optional)
-<Settings>
-  <Strings>
-    <entry>
-      <string>IRCServer</string>
-      <string>127.0.0.1</string>
-    </entry>
-    <entry>
-      <string>IRCServerPortMin</string>
-      <string>6667</string>
-    </entry>
-    <entry>
-      <string>IRCServerPortMax</string>
-      <string>6667</string>
-    </entry>
-    <entry>
-      <string>botChannel</string>
-      <string>#test</string>
-    </entry>
-    <entry>
-      <string>botNickname</string>
-      <string>UQMatchbot</string>
-    </entry>
-    <entry>
-      <string>botUsername</string>
-      <string>UQMatchbot</string>
-    </entry>
-    <entry>
-      <string>botRealname</string>
-      <string>UQMatchbot</string>
-    </entry>
-    <entry>
-      <string>botHTMLLogFile</string>
-      <string>c:\log.html</string>
-    </entry>
-  </Strings>
-</Settings>
-
-
 *I (Megagun) have registered UQMatchbot on FreeNode. The bot has +v on #uqm-arena. If you want to host the bot on there, ask me for the ident password. :)
 
 *If using NetBeans, use licenses/license-short.txt for the project license, so that it gets embedded in all files neatly. :)
+
+*The configuration of a bot is currently handled through ini4j. Use (and modify!) the following text and save it as 'uqmatchbot_conf.ini' for epicness:
+;UQMatchbot configuration file
+;Note that there are several 'defaults' that are used if these aren't specified. See the code for details.
+;Not all of these settings need to be specified. some are optional
+[Settings]
+IRCServer = 127.0.0.1
+IRCServerPortMin = 6667
+IRCServerPortMax = 6667
+botChannel = #uqm-arena
+botNickname = UQMatchbot
+botUsername = UQMatchbot
+botRealname = UQMatchbot
+botHTMLLogFile = c:\log.html
