@@ -1,0 +1,8 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}This file is part of UQMatchbot 
+${licensePrefix}see LICENSE.TXT for more information about the UQMatchbot project's license.
+<#if licenseLast??>
+${licenseLast}
+</#if>
